@@ -130,7 +130,7 @@ jobs:
         echo "::set-output name=status::success"
 
     - name: Clean Firemware
-    id: clean
+      id: clean
       run: |
         cd ${{ env.FIRMWARE }}
         rm -rf openwrt-bcm53xx-generic-asus_rt-ac56u-squashfs.trx
